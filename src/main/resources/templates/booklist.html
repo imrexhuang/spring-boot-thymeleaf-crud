@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout::head"></head>
+<body class="d-flex flex-column h-100">
+	<header th:replace="layout/layout::header"></header>
+
+	<!-- Begin page content -->
+	<div class="content">
+		<div class="container">
+			<h1 class="mt-5">Books List - list.html</h1>
+			
+			<div class="alert alert-danger alert-dismissible fade show"
+				role="alert" th:if="${error != null}">
+				<strong>Error!</strong> <span th:text="${error}">Message here</span>
+				<button type="button" class="close" data-dismiss="alert"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div class="alert alert-warning alert-dismissible fade show"
+				role="alert" th:if="${warning != null}">
+				<strong>Warning!</strong> <span th:text="${warning}">Message here</span>
+				<button type="button" class="close" data-dismiss="alert"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			
+			<div class="alert alert-info alert-dismissible fade show"
+				role="alert" th:if="${info != null}">
+				<strong>Information!</strong> <span th:text="${info}">Message here</span>
+				<button type="button" class="close" data-dismiss="alert"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			
+			<div class="alert alert-success alert-dismissible fade show"
+				role="alert" th:if="${success != null}">
+				<strong>Success!</strong> <span th:text="${success}">Message here </span>
+				<button type="button" class="close" data-dismiss="alert"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<a th:href="@{/books/new}"
+				class="btn btn-primary float-right mb-3">Add Book</a>
+
+			<table class="table table-striped table-bordered">
+				<thead class="thead-inverse">
+					<tr>
+						<th>BookID</th>
+						<th>Name</th>
+						<th>Author</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="book : ${books}">
+						<td th:text="${book.bookid}"></td>
+						<td th:text="${book.name}"></td>
+						<td th:text="${book.author}"></td>
+						<td><a th:href="@{/books/edit/} + ${book.bookid}"
+							class="btn btn-warning btn-sm">Edit</a> <a
+							th:href="@{/books/delete/} + ${book.bookid}"
+							class="btn btn-danger btn-sm"
+							onclick="return confirm('Do you want to delete this book?')">Delete</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+	<footer class="footer mt-auto py-3" th:replace="layout/layout::footer"></footer>
+</body>
+</html>

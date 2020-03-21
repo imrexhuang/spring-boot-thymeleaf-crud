@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout::head"></head>
+<body class="d-flex flex-column h-100">
+	<header th:replace="layout/layout::header"></header>
+
+	<!-- Begin page content -->
+	<div class="content">
+		<div class="container">
+			<h1 class="mt-5">Spring Boot 2 Example - Books</h1>
+			<p class="lead">Making <span class="text-primary">CRUD</span> with Sprint Boot 2 + JPA + H2 +
+				Spring MVC + Thymeleaf + Bootstrap 4.x.</p>
+
+			<p class="lead">The example also has flash messages.</p>
+		</div>
+	</div>
+
+	<footer class="footer mt-auto py-3" th:replace="layout/layout::footer"></footer>
+</body>
+</html>

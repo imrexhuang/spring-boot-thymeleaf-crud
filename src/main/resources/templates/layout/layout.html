@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title th:text="'Spring Boot 2 Example | ' + ${title}"></title>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+	<header th:fragment="header">
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" th:href="@{/}">Spring Boot 2</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarCollapse" aria-controls="navbarCollapse"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" th:href="@{/}">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/books}">Books</a></li>						
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Begin page content -->
+
+	<!-- End page content -->
+
+	<footer class="footer mt-auto py-3" th:fragment="footer">
+		<div class="container">
+			Powered by <a href="https://spring.io/projects/spring-boot"
+				target="_blank">Spring Boot 2</a> & <a
+				href="http://www.thymeleaf.org" target="_blank">Thymeleaf</a>.
+		</div>
+
+		<script th:src="@{/js/jquery-3.3.1.slim.min.js}"></script>
+		<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+	</footer>
+</body>
+</html>
