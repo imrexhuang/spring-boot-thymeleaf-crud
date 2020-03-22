@@ -9,9 +9,6 @@ Fork from https://github.com/karoman0584/spring-boot-web-crud
 執行方式
 mvnw spring-boot:run
 
-或是
-
-mvn spring-boot:run -Drun.jvmArguments="-Dfile.encoding=UTF-8"
 
 啟動後瀏覽器開啟 http://localhost:8888/books
 

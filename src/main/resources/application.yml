@@ -3,7 +3,6 @@ spring:
     platform: h2
     schema: classpath:schema.sql  
     data: classpath:import.sql
-    sql-script-encoding: utf-8    
     
 server:
     port: 8888    
