@@ -1,7 +1,7 @@
 INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (1, 'Test1', 'ABCDE1');
-INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (2, '異境之書：安伯托‧艾可最後人文藝術巨作', '安伯托‧艾可');
-INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (3, '窮查理的投資哲學與選股金律', '崔恩‧葛瑞芬');
-INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (4, '演算法星球：七天導覽行程，一次弄懂演算法', '賽巴斯提安?史帝樂');
+INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (2, '異境之書：安伯托‧艾可最後人文藝術巨作', '安伯托．艾可');
+INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (3, '窮查理的投資哲學與選股金律', '崔恩．葛瑞芬');
+INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (4, '演算法星球：七天導覽行程，一次弄懂演算法', '賽巴斯提安．史帝樂');
 INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (5, '戴美樂小姐的婚禮', '王定國');
 INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (6, '超級預測：洞悉思考的藝術與科學，在不確定的世界預見未來優勢', ' 菲利普．泰特洛克');
 INSERT INTO `book` (`bookid`, `name`, `author`) VALUES (7, '貓狗的逆襲：荊棘滿途的公民之路', '大衛‧葛林姆');
