@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=ThymeleafCrud
+    username : ThymeleafCrud
+    password : ThymeleafCrud
+    driverClassName : com.microsoft.sqlserver.jdbc.SQLServerDriver
+    
+server:
+    port: 8085
+    session-timeout: 30
+    tomcat.max-threads: 0
+    tomcat.uri-encoding: UTF-8
