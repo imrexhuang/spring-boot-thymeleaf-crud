@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[book](
-	[bookid] [int]  NOT NULL,
+	[bookid] [int]  IDENTITY(1,1) NOT NULL,
 	[name] [varchar](255) NULL,
 	[author] [varchar](255) NULL,
 PRIMARY KEY CLUSTERED 
